@@ -18,6 +18,7 @@ class App extends React.Component {
       let result = pick_three(possible_chars)
       let balance = this.state.balance
       if (result[0]==result[1] && result[1]==result[2]){
+        console.log('Win!')
         balance +=50
       }
       this.setState({'current_spin':result, balance: balance})
